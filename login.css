@@ -1,0 +1,104 @@
+body {
+    background-image: url('baza.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container {
+    background-color: #3f3f3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    display: none;
+    flex-direction: column;
+}
+
+.form-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; 
+    color: #333; 
+}
+
+.form-container label {
+    margin-bottom: 5px;
+}
+
+.form-container .checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-container .checkbox input {
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none; 
+}
+
+
+#backButton {
+    background-color: #f44336;
+}
+
+#backButton:hover {
+    background-color: #e53935; 
+}
+@media (max-width: 480px) {
+    .auth-container {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .auth-container h2 {
+        font-size: 1.5em; 
+    }
+
+    .auth-container button {
+        padding: 12px;
+        font-size: 18px; 
+    }
+
+    .form-container input {
+        padding: 12px;
+    }
+}

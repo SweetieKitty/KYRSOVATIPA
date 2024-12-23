@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація - Аптека "Канабіс"</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="auth-container">
+        <h2>Авторизація</h2>
+        <div id="menuButtons">
+            <button id="loginButton">Увійти</button>
+            <button id="registerButton">Реєстрація</button>
+        </div>
+        <button id="backButton" class="hidden">Назад</button>
+
+        <div id="loginForm" class="form-container hidden">
+            <label for="login">Логін або номер телефону</label>
+            <input type="text" id="login" placeholder="Ваш логін або номер телефону">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" placeholder="Ваш пароль">
+            <button id="nextButton">Далі</button>
+        </div>
+
+        <div id="registerForm" class="form-container hidden">
+            <label for="phone">Номер телефону</label>
+            <input type="text" id="phone" placeholder="Ваш номер телефону">
+            <label for="passwordRegister">Пароль</label>
+            <input type="password" id="passwordRegister" placeholder="Ваш пароль">
+            <label for="firstName">Ім'я</label>
+            <input type="text" id="firstName" placeholder="Ваше ім'я">
+            <label for="lastName">Прізвище</label>
+            <input type="text" id="lastName" placeholder="Ваше прізвище">
+            <label for="address">Адреса</label>
+            <input type="text" id="address" placeholder="Ваша адреса">
+            <div class="checkbox">
+                <input type="checkbox" id="adult" required>
+                <label for="adult">Мені виповнилося 18 років</label>
+            </div>
+            <button id="verifyButton">Зареєструватися</button>
+        </div>
+
+        <div id="verificationForm" class="form-container hidden">
+            <label for="verificationCode">Код підтвердження</label>
+            <input type="text" id="verificationCode" placeholder="4-значний код">
+            <button id="nextButton1">Далі</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

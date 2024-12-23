@@ -1,0 +1,402 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 110px;
+    padding: 0;
+    background-color: #2d302b;
+    color: #ffffff;
+}
+.solid{
+    margin-left: 50px;
+}
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    color: #9fd5b0;
+}
+
+h5 {
+    color: #000000;
+}
+
+h6{
+    color: white;
+    font-size: larger
+}
+/*.........................................Бургер меню.............................................................. */  
+
+/* Розположення кнопок */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    justify-content: flex-end;
+}
+/*Колір кнопок */
+nav ul li a {        
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #a8d08d;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu .bar {
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 3px 100px;
+    margin-bottom: 5px
+}
+
+
+/*.............................. Шапка .......................................*/
+header {
+    background-image: url('/images/baza.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-align: center; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header-img {
+    height: 98px;
+    width:  500px;
+
+}
+.nav-links{
+    
+    margin-right: 50px;   
+    
+}
+
+/*.............................. Популярні......................................*/
+.popular_tovars, .poslugi{
+    font-family: 'Arial Black', sans-serif;
+    color: #9fd5b0;
+    margin-top: -10px;
+    font-size: 30px;
+}
+.popular_tovars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/* Центрування контейнера */
+.product-popular {
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    max-width: 100%; 
+    overflow: hidden; 
+    box-sizing: border-box; 
+    padding: 10px;
+}
+
+/* Стилі для елементів слайдера */
+.slider div {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #428c61;
+    cursor: pointer;
+}
+
+.slider div:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі фоток */
+.slider img {
+    max-width: 250px; 
+    margin-bottom: -10px;
+    border-radius: 20px; 
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+    
+}
+/*.............................. Наші послуги .......................................*/
+
+.poslugi{
+    display: flex;
+    justify-content: center;
+}
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(170px, 1fr)); 
+    gap: 20px;
+    width: 100%; 
+}
+.catalog-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #a8d08d;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-card h4 {
+    margin-top: 15px;
+    color: #2c5d3f;
+}
+
+/*.............................. Про аптеку .......................................*/
+.section-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+}
+
+/*.............................. Повний каталог .......................................*/
+.view-catalog-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-catalog-button:hover {
+    background-color: #45a049;
+}
+.fullcatalog {
+    display: flex;
+    justify-content: center;
+    margin-top: 37px;
+}
+.assortiment {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: aliceblue
+}
+
+#full-catalog, #services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    overflow: hidden; 
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(170px, 1fr)); 
+    gap: 20px;
+    width: 100%; 
+}
+
+.catalog-item {
+    background-color: #444444;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; 
+}
+
+.catalog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.catalog-item h3 {
+    font-size: 18px;
+    color: #f1f1f1; 
+    margin: 10px 0;
+}
+
+.catalog-item p {
+    font-size: 14px;
+    color: #cccccc; 
+    margin-bottom: 10px;
+}
+
+.catalog-item .price {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.api {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, 1fr)); 
+  gap: 20px; 
+  width: 100%; 
+  max-width: 1470px; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  overflow: hidden; 
+  text-align: center; 
+}
+
+
+/*.............................. Відгуки .......................................*/
+.review-avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.nickname {
+    font-weight: bold;
+    color: #2c5d3f;
+}
+
+
+/*...........................................Футер..................................................*/
+footer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d6a4f;
+    color: #ffffff;
+    padding: 5 px 0;
+    position: relative;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .popular_tovars{
+        margin-top: 150px;
+    }
+    .catalog-container {
+    grid-template-columns: repeat(2, minmax(170px, 1fr)); 
+
+}
+    .service-cards {
+    grid-template-columns: repeat(2, minmax(170px, 1fr)); 
+
+}
+
+
+
+}
+
+@media (max-width: 480px) {
+    .slider div {
+        transform: scale(0.99); 
+    }
+
+    .slider img {
+        max-width: 90px; 
+    }
+}
+@media (max-width: 1024px) {
+  .api {
+    grid-template-columns: repeat(2, minmax(10px, 1fr)); 
+  }
+}
+
+@media (max-width: 768px) {
+  .api {
+    grid-template-columns: repeat(2, minmax(10px, 1fr)); 
+    padding: 10px; 
+  }
+
+}
+
+
