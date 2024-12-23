@@ -60,7 +60,6 @@ nav ul li a:hover {
 
 /*.............................. Шапка .......................................*/
 header {
-    background-image: url('/images/baza.png');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -73,6 +72,7 @@ header {
 }
 
 .header-container {
+    background-image: url('/images/baza.png');
     display: flex;
     align-items: center;
     justify-content: space-between;
